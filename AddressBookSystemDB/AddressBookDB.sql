@@ -16,3 +16,13 @@ insert into Address_Book values
 ('Monika', 'Sharma', 'NewTehisl', 'Ghaziabad', 'UP', 898963, 8839026598, 'monika25@gmail.com'),
 ('Manisha', 'Gupta', 'KalindiKunj', 'Aligarh', 'UP', 357895, 7836152489, 'mahi258@gmail.com');
 
+--View contacts in address book
+select * from Address_Book;
+
+--UC4 Ability to edit existing contact person using their name
+update Address_Book set City='Ghaziabad' where First_Name='Anmol';
+update Address_Book set City='Ghaziabad' where First_Name='Manisha';
+
+--UC5 Ability to delete a person using person's name
+delete from Address_Book where First_Name='Manisha';
+
