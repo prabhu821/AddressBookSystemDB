@@ -52,3 +52,9 @@ select Count(Address_Book_Type) as Number_Of_Person_By_FamilyType from Address_B
 select Count(Address_Book_Type) as Number_Of_Person_By_FriendType from Address_Book where Address_Book_Type='Friend' ;
 select Count(Address_Book_Type) as Number_Of_Person_By_ProfessionType from Address_Book where Address_Book_Type='Profession' ;
 
+--UC11 Ability to add person to both Friend and Family
+INSERT INTO Address_Book(First_Name,Last_Name,Address,City,State,Zip_Code,Phone_Number,Email_Id, Address_Book_Type,Address_Book_Name ) 
+VALUES ('Neetu', 'Sharma', 'SubashChok', 'Dadari', 'UP', 785612, 8725982563, 'neetu072@gmail.com', 'Friend','Friend_List'),
+('Nishu', 'Singh', 'NewTehsil', 'Khurja', 'UP', 202131, 9605982523, 'nishu2@gmail.com','Friend','Friend_List'),
+('Ritesh', 'Rao', 'MurariNagar', 'Khurja', 'UP', 203131, 7805982523, 'anmol122@gmail.com','Family','Family_List'),
+('Aakansha', 'Rao', 'AnandNagar', 'Khatima', 'UK', 25786, 9865982523, 'akan25@gmail.com','Family','Family_List');
