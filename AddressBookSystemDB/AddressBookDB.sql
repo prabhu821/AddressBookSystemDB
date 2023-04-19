@@ -29,3 +29,7 @@ delete from Address_Book where First_Name='Manisha';
 --UC6 Ability to Retrieve Person belonging to a City or State from the Address Book
 Select * from Address_Book where City='Ghaziabad';
 Select * from Address_Book where State='UP';
+
+--UC7 Ability to understand the size of address book by City and State
+select Count(*) as Size_Of_Address_Book_By_City from Address_Book  where City='Ghaziabad';
+select Count(*) as Size_Of_Address_Book_By_State from Address_Book  where State='UP';
