@@ -47,3 +47,8 @@ Update Address_Book set Address_Book_Name='Friend_List', Address_Book_Type='Frie
 Select * from Address_Book where Address_Book_Name='Family_List';
 Select * from Address_Book where Address_Book_Type='Friend';
 
+--UC10 Ability to get number of contact persons i.e. count by type
+select Count(Address_Book_Type) as Number_Of_Person_By_FamilyType from Address_Book where Address_Book_Type='Family' ;
+select Count(Address_Book_Type) as Number_Of_Person_By_FriendType from Address_Book where Address_Book_Type='Friend' ;
+select Count(Address_Book_Type) as Number_Of_Person_By_ProfessionType from Address_Book where Address_Book_Type='Profession' ;
+
